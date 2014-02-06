@@ -5,7 +5,19 @@ a:hover {color: #fff; text-decoration: none}
 .container {height: 100%; min-height: 100%;}
 div.shad{background: url(shad.png);
     padding: 15px;}
-
+div.slides{position: absolute; top: 20px}
 div.head {margin-top: 40px;}
+img.slide {position: absolute;}
 
-div.timeline{margin-top: 50%}
+div.timeline{text-align: center}
+div.prevDay{margin-top: 300px;}
+div.prevDay, div.nextDay{white-space: nowrap;}
+
+@media (max-width: 768px) { 
+	   div.prevDay, div.nextDay,div.timeline{font-size: 10px} 
+	   div.prevDay{margin-top: 50px;}
+	   }
+@media (max-width: 970px) { 
+	   div.prevDay, div.nextDay,div.timeline{font-size: 11px} 
+	    div.prevDay{margin-top: 150px;}
+	   }
